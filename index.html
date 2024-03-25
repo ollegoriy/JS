@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doc</title>
+<link rel="stylesheet" href="./style.css">
+</head> 
+<body>
+<script>
+    alert("Сейчас расскажу анекдот");
+    
+    confirm("Хотите послушать?");
+    
+    anekdot = prompt("Анекдот", "Анекдот стоит 5 рублей");
+    document.writeln(anekdot)
+</script>
+
+<script>
+function convertToInt() {
+    var text = document.getElementById("age").value;
+    var integerValue = parseInt(text);
+    if (!isNaN(integerValue)) {
+        document.getElementById("result").value = "Твой возраст через 10 лет: " + integerValue + 10;
+    } else {
+        document.getElementById("result").value = "Ты ввел(а) не число!!!!!";
+    }
+}
+
+function clearResult() {
+    document.getElementById("result").value = "";
+}
+</script>
+
+<h3>Угадаю твой возраст через 10 лет</h3>
+<p> Введи возраст: <br>
+    <textarea id="age" rows="3" cols="60"></textarea>
+</p>
+<p>
+    <button onclick="convertToInt()">Узнать возраст</button>
+    <button onclick="clearResult()">Очистить</button>
+</p>
+<p>
+    Результат: <br>
+    <textarea id="result" rows="3" cols="60"></textarea>
+</p>
+<p>P.S. Я знаю, что к возврасту просто приписывается число 10 это типо прикол рофлан хахахаах смешнявка ржомба прикол сработан</p>
+
+<script>
+    sait = "https://steamcommunity.com/id/ollegoriy";
+    document.writeln(sait);
+    
+    i = sait.indexOf("a");
+    i = i + 1;
+    document.writeln("Буква a под номером: " + i);
+    
+    username = sait.indexOf("ollegoriy");
+    user = sait.substr(username);
+    
+    domain = sait.substr(8, username - 12);
+    
+    document.writeln("Пользователь: ", user, " Домен: ", domain);
+    </script>
+</body> 
+</html>
